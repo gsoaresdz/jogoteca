@@ -11,10 +11,11 @@ app = Flask(__name__)
 @app.route('/inicio')
 def ola():
     jogo1 = Jogo('Tetris', 'Puzzle', 'PC')
-    jogo2 = Jogo('God of War', 'Rack in Slash', 'PS2')
+    jogo2 = Jogo('God of War', 'Rock in Slash', 'PS2')
+    jogo3 = Jogo('Mortal Kombat', 'Luta', 'PS2')
    
-    lista = [jogo1, jogo2]
-    
+    lista = [jogo1, jogo2, jogo3]
+
     return render_template('lista.html', titulo = 'Jogos', jogos = lista)
 
 app.run()
