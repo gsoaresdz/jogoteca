@@ -18,4 +18,5 @@ def ola():
 
     return render_template('lista.html', titulo = 'Jogos', jogos = lista)
 
+
 app.run()
