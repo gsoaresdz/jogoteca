@@ -22,6 +22,8 @@ def index():
 
 @app.route('/novo')
 def novo():
+    if 'usuario_logado' not in session or session['usuario_logado'] == None:
+        return redirect('/login')
     return render_template('novo.html', titulo = 'Novo Jogo')
 
 @app.route('/criar', methods=['POST',])
@@ -39,7 +41,7 @@ def login():
 
 @app.route('/autenticar', methods=['POST',])
 def autenticar():
-    if 'alohomora' == request.form['senha']:
+    if 'admin' == request.form['senha']:
         session['usuario_logado'] = request.form['usuario']
         flash( session['usuario_logado'] + ' logado com sucesso!')
         return redirect('/')
