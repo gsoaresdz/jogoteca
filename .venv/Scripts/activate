@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\b2101015\OneDrive - BULLLA SA\ws-projetos-alura\jogoteca\.venv"
+VIRTUAL_ENV="C:\Users\Gabriel Soares\OneDrive - BULLLA IP S.A\ws-projetos-alura\jogoteca\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
