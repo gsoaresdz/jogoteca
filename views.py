@@ -1,5 +1,7 @@
-from flask import flash, redirect, render_template, request, session, url_for, send_from_directory
+from flask import (flash, redirect, render_template, request,
+                   send_from_directory, session, url_for)
 
+from helpers import recupera_imagem
 from jogoteca import app, db
 from models import Jogos, Usuarios
 
@@ -41,7 +43,8 @@ def editar(id):
     if 'usuario_logado' not in session or session['usuario_logado'] == None:
         return redirect(url_for('login', proxima = url_for('editar')))
     jogo = Jogos.query.filter_by(id = id).first()
-    return render_template('editar.html', titulo = 'Editando Jogo', jogo = jogo)
+    capa_jogo = recupera_imagem(id)
+    return render_template('editar.html', titulo = 'Editando Jogo', jogo = jogo, capa_jogo = capa_jogo)
 
 @app.route('/atualizar', methods=['POST',])
 def atualizar():
@@ -52,6 +55,10 @@ def atualizar():
 
     db.session.add(jogo)
     db.session.commit()
+
+    arquivo = request.files['arquivo']
+    upload_path = app.config['UPLOAD_PATH']
+    arquivo.save(f'{upload_path}/capa{jogo.id}.jpg')
 
     return redirect(url_for('index'))
 
