@@ -1,7 +1,16 @@
 import os
 
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField, validators
+
 from jogoteca import app
 
+
+class FormularioJogo(FlaskForm):
+    nome = StringField('Nome do Jogo', [validators.DataRequired(), validators.Length(min=1, max=50)])
+    categoria = StringField('Categoria', [validators.DataRequired(), validators.Length(min=1, max=40)])
+    console = StringField('Console', [validators.DataRequired(), validators.Length(min=1, max=20)])
+    salvar = SubmitField('Salvar')
 
 def recupera_imagem(id):
     for nome_arquivo in os.listdir(app.config['UPLOAD_PATH']):
@@ -13,3 +22,4 @@ def deleta_arquivo(id):
     arquivo = recupera_imagem(id)
     if arquivo != 'capa_padrao.jpg':
         os.remove(os.path.join(app.config['UPLOAD_PATH'], arquivo))
+
