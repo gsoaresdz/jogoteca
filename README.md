@@ -2,6 +2,8 @@
 
 Jogoteca é um projeto para gerenciar uma coleção de jogos. O projeto permite que os usuários façam upload de imagens, gerenciem jogos e muito mais.
 
+![Captura de tela 2023-09-10 104258](https://github.com/gsoaresdz/jogoteca/assets/69989654/a31abb3c-d5a3-4b75-9a3f-91ef4dea7821)
+
 ---
 
 ## **Estrutura do Projeto**
