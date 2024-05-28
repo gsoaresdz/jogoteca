@@ -1,87 +1,99 @@
-## **Jogoteca**
+<h1 align="center">Jogoteca</h1>
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/gsoaresdz/jogoteca?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/gsoaresdz/jogoteca?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/gsoaresdz/jogoteca?color=56BEB8">
+  <!--<img alt="License" src="https://img.shields.io/github/license/usuario/jogoteca?color=56BEB8">-->
+</p>
+<p align="center">
+  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-execução">Execução</a> &#xa0; | &#xa0;
+  <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
+  <a href="https://github.com/gsoaresdz" target="_blank">Autor</a>
+</p>
+<br>
 
-Jogoteca é um projeto para gerenciar uma coleção de jogos. O projeto permite que os usuários façam upload de imagens, gerenciem jogos e muito mais.
+## **:dart: Sobre**
 
-![Captura de tela 2023-09-10 104258](https://github.com/gsoaresdz/jogoteca/assets/69989654/a31abb3c-d5a3-4b75-9a3f-91ef4dea7821)
+Este projeto consiste em uma aplicação web chamada Jogoteca, que permite aos usuários cadastrar, visualizar e gerenciar informações sobre jogos. A aplicação utiliza o framework Flask para o desenvolvimento web e inclui funcionalidades de autenticação de usuários, upload de imagens e manipulação de banco de dados.
 
----
+## **:memo: Estrutura do Projeto**
 
-## **Estrutura do Projeto**
+A estrutura do projeto é organizada da seguinte forma:
 
-```php
-jogoteca/
-│
-├── config.py                # Configurações do projeto
-├── helpers.py               # Funções auxiliares
-├── jogoteca.py              # Arquivo principal do projeto
-├── models.py                # Modelos de dados
-├── prepara_banco.py         # Script para preparar o banco de dados
-│
-├── static/                  # Arquivos estáticos (CSS, JS, etc.)
-├── templates/               # Templates HTML
-├── uploads/                 # Pasta para uploads de usuários
-│
-├── views_game.py            # Lógica de exibição para jogos
-└── views_user.py            # Lógica de exibição para usuários
+- **config.py:** Configurações da aplicação.
+- **helpers.py:** Funções auxiliares.
+- **jogoteca.py:** Arquivo principal da aplicação.
+- **models.py:** Definição dos modelos do banco de dados.
+- **prepara_banco.py:** Script para preparar o banco de dados.
+- **static:** Arquivos estáticos (CSS, JS, imagens).
+- **templates:** Templates HTML.
+- **uploads:** Diretório para uploads de imagens.
+- **views_game.py:** Views relacionadas aos jogos.
+- **views_user.py:** Views relacionadas aos usuários.
+
+## **:sparkles: Features**
+
+:heavy_check_mark: **Feature 1**: Cadastro e autenticação de usuários.
+
+:heavy_check_mark: **Feature 2**: Cadastro, visualização e gerenciamento de jogos.
+
+:heavy_check_mark: **Feature 3**: Upload de imagens para os jogos.
+
+:heavy_check_mark: **Feature 4**: Interface amigável utilizando templates HTML.
+
+## **:rocket: Tecnologias**
+
+As seguintes ferramentas foram usadas neste projeto:
+
+- [Python](https://www.python.org/)
+- Flask
+- SQLite
+- Jinja2
+- Werkzeug
+
+## **:white_check_mark: Requerimentos**
+
+Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com/) e [Python](https://www.python.org/) instalados.
+
+## **:checkered_flag: Execução**
+
+```bash
+bashCopy code
+# Clone do projeto
+$ git clone https://github.com/gsoaresdz/jogoteca.git
+
+# Entre no diretório do projeto
+$ cd jogoteca
+
+# Crie um ambiente virtual
+$ python -m venv venv
+
+# Ative o ambiente virtual
+$ source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+
+# Instale as dependências
+$ pip install -r requirements.txt
+
+# Prepare o banco de dados
+$ python prepara_banco.py
+
+# Execute a aplicação
+$ flask run
+
+# A aplicação estará disponível em http://127.0.0.1:5000
 
 ```
 
----
+## **:memo: Licença**
 
-## **Bibliotecas e Módulos Utilizados**
+Este projeto está sob licença do MIT. Para obter mais detalhes, consulte o arquivo [LICENSE](LICENSE).
 
-- **`mysql.connector`**: Para conectar e operar com MySQL.
-- **`wtforms`**: Biblioteca para lidar com formulários.
-- **`flask_sqlalchemy`**: Extensão Flask para usar SQLAlchemy.
-- **`flask_wtf.csrf`**: Para proteção CSRF.
-- **`flask_bcrypt`**: Para criptografia.
-- **`os`**: Biblioteca padrão do Python para interação com o sistema operacional.
-- **`flask`**: Framework web.
-- **`time`**: Biblioteca padrão do Python para manipulação de tempo.
+Feito com :heart: by <a href="https://github.com/gsoaresdz" target="_blank">gsoaresdz</a>
 
----
+&#xa0;
 
-## **Como Instalar o Python**
-
-1. Acesse **https://www.python.org/downloads/**
-2. Escolha a versão do Python que deseja instalar.
-3. Siga as instruções na tela para instalação.
-
----
-
-## **Como Instalar o Visual Studio Code (VSCode)**
-
-1. Acesse **https://code.visualstudio.com/**
-2. Clique no botão "Download" correspondente ao seu sistema operacional.
-3. Siga as instruções na tela para instalação.
-4. Recomendamos a instalação da extensão "Python" do VSCode para melhor desenvolvimento.
-
----
-
-## **Como Iniciar o Projeto**
-
-1. Clone este repositório ou faça o download.
-2. Navegue até a pasta do projeto e crie um ambiente virtual:
-
-```
-python -m venv venv
-```
-
-1. Ative o ambiente virtual:
-- Windows: **`venv\Scripts\activate`**
-- Linux/Mac: **`source venv/bin/activate`**
-1. Instale as bibliotecas necessárias:
-
-```
-pip install -r requirements.txt
-```
-
-**Nota**: O arquivo **`requirements.txt`** deve ser criado e conter todas as bibliotecas necessárias.
-
-1. Execute o arquivo principal:
-
-```
-python jogoteca.py
-```
-
-1. Acesse a aplicação em seu navegador no endereço **http://127.0.0.1:5000/**.
+<a href="#top">De volta ao topo</a>
