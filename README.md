@@ -3,97 +3,94 @@
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/gsoaresdz/jogoteca?color=56BEB8">
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/gsoaresdz/jogoteca?color=56BEB8">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/gsoaresdz/jogoteca?color=56BEB8">
-  <!--<img alt="License" src="https://img.shields.io/github/license/usuario/jogoteca?color=56BEB8">-->
+  <!--<img alt="License" src="https://img.shields.io/github/license/user/jogoteca?color=56BEB8">-->
 </p>
 <p align="center">
-  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-execução">Execução</a> &#xa0; | &#xa0;
-  <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
-  <a href="https://github.com/gsoaresdz" target="_blank">Autor</a>
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-execution">Execution</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/gsoaresdz" target="_blank">Author</a>
 </p>
 <br>
 
-## **:dart: Sobre**
+## **:dart: About**
 
-Este projeto consiste em uma aplicação web chamada Jogoteca, que permite aos usuários cadastrar, visualizar e gerenciar informações sobre jogos. A aplicação utiliza o framework Flask para o desenvolvimento web e inclui funcionalidades de autenticação de usuários, upload de imagens e manipulação de banco de dados.
+This project is a web application called Jogoteca, which allows users to register, view, and manage information about games. The application uses the Flask framework for web development and includes features such as user authentication, image uploads, and database management.
 
-## **:memo: Estrutura do Projeto**
+## **:memo: Project Structure**
 
-A estrutura do projeto é organizada da seguinte forma:
+The project structure is organized as follows:
 
-- **config.py:** Configurações da aplicação.
-- **helpers.py:** Funções auxiliares.
-- **jogoteca.py:** Arquivo principal da aplicação.
-- **models.py:** Definição dos modelos do banco de dados.
-- **prepara_banco.py:** Script para preparar o banco de dados.
-- **static:** Arquivos estáticos (CSS, JS, imagens).
-- **templates:** Templates HTML.
-- **uploads:** Diretório para uploads de imagens.
-- **views_game.py:** Views relacionadas aos jogos.
-- **views_user.py:** Views relacionadas aos usuários.
+- **config.py:** Application configurations.
+- **helpers.py:** Auxiliary functions.
+- **jogoteca.py:** Main application file.
+- **models.py:** Database model definitions.
+- **prepara_banco.py:** Script to prepare the database.
+- **static:** Static files (CSS, JS, images).
+- **templates:** HTML templates.
+- **uploads:** Directory for image uploads.
+- **views_game.py:** Views related to games.
+- **views_user.py:** Views related to users.
 
 ## **:sparkles: Features**
 
-:heavy_check_mark: **Feature 1**: Cadastro e autenticação de usuários.
+:heavy_check_mark: **Feature 1**: User registration and authentication.
 
-:heavy_check_mark: **Feature 2**: Cadastro, visualização e gerenciamento de jogos.
+:heavy_check_mark: **Feature 2**: Game registration, viewing, and management.
 
-:heavy_check_mark: **Feature 3**: Upload de imagens para os jogos.
+:heavy_check_mark: **Feature 3**: Image uploads for games.
 
-:heavy_check_mark: **Feature 4**: Interface amigável utilizando templates HTML.
+:heavy_check_mark: **Feature 4**: User-friendly interface using HTML templates.
 
-## **:rocket: Tecnologias**
+## **:rocket: Technologies**
 
-As seguintes ferramentas foram usadas neste projeto:
+The following tools were used in this project:
 
 - [Python](https://www.python.org/)
-- Flask
-- SQLite
-- Jinja2
-- Werkzeug
+- [Flask](https://flask.palletsprojects.com/en/stable/)
+- [SQLite](https://www.sqlite.org/)
+- [Jinja2](https://pypi.org/project/Jinja2/)
+- [Werkzeug](https://pypi.org/project/Werkzeug/)
 
-## **:white_check_mark: Requerimentos**
+## **:white_check_mark: Requirements**
 
-Antes de iniciar :checkered_flag:, você precisa ter [Git](https://git-scm.com/) e [Python](https://www.python.org/) instalados.
+Before starting :checkered_flag:, make sure you have [Git](https://git-scm.com/) and [Python](https://www.python.org/) installed.
 
-## **:checkered_flag: Execução**
+## **:checkered_flag: Execution**
 
 ```bash
-bashCopy code
-# Clone do projeto
+# Clone the project
 $ git clone https://github.com/gsoaresdz/jogoteca.git
 
-# Entre no diretório do projeto
+# Navigate to the project directory
 $ cd jogoteca
 
-# Crie um ambiente virtual
+# Create a virtual environment
 $ python -m venv venv
 
-# Ative o ambiente virtual
-$ source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+# Activate the virtual environment
+$ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-# Instale as dependências
+# Install dependencies
 $ pip install -r requirements.txt
 
-# Prepare o banco de dados
+# Prepare the database
 $ python prepara_banco.py
 
-# Execute a aplicação
+# Run the application
 $ flask run
 
-# A aplicação estará disponível em http://127.0.0.1:5000
+# The application will be available at http://127.0.0.1:5000
 
 ```
 
-## **:memo: Licença**
+## **:memo: License**
 
-Este projeto está sob licença do MIT. Para obter mais detalhes, consulte o arquivo [LICENSE](LICENSE).
+This project is under the MIT license. For more details, see the [LICENSE](LICENSE) file.
 
-Feito com :heart: by <a href="https://github.com/gsoaresdz" target="_blank">gsoaresdz</a>
+Made with :heart: by <a href="https://github.com/gsoaresdz" target="_blank">gsoaresdz</a>
 
-&#xa0;
-
-<a href="#top">De volta ao topo</a>
+<a href="#top">Back to top</a>
